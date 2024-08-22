@@ -15,6 +15,11 @@
     <script src="https://kit.fontawesome.com/a58ad42c64.js" crossorigin="anonymous"></script>
     <!-- Fontawesome setup -->
 
+    <!-- DaisyUi CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- DaisyUi CDN -->
+
     <!-- Tailwind Play CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -29,29 +34,80 @@
       }
     </script>
     <!-- Tailwind Play CDN -->
+    
+    <!-- font-fomily -->
+      <style>
+        .font-manrope{
+        font-family: 'manrope';
+      }
+      </style>
+    <!-- font-fomily -->
+
 </head>
-<body>
-  <!-- Main-Content -->
-  <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
-    <header>
-      <nav class="flex justify-between">
-        <h1><a href=""><i class="fa fa-arrow-right" aria-hidden="true"></i> Rinterio</a></h1>
+<body class="font-manrope">
+  <header class="container mx-auto px-12 pt-5 md:px-28">
+    <nav class="container mx-auto">
+      <div class="navbar bg-base-100 justify-between mx-auto">
 
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Services</a></li>
-          <li><a href="">Portfolio</a></li>
-          <li><a href="">Blogs</a></li>
-          <li><a href="">Contact Us</a></li>
-        </ul>
-
-        <div>
-          <i class="fa fa-search" aria-hidden="true"></i>
-          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-          <h1>Book Consult <i class="fa fa-arrow-right" aria-hidden="true"></i></h1>
+        <div class="navbar-start w-full">
+          <h1 class=" font-bold text-xl lg:"><i class="fa fa-arrow-right bg-[#abef5f] p-3 rounded-full -rotate-45" aria-hidden="true"></i><a href=""> Rinterio</a></h1>
         </div>
-      </nav>
-    </header>
+        
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 hidden max-md:flex  mr-8">
+            <li class="text-gray-500 font-bold"><a>Home</a></li>
+            <li class="text-gray-500"><a>Services</a></li>
+            <li class="text-gray-500"><a>Portfolio</a></li>
+            <li class="text-gray-500"><a>Blogs</a></li>
+            <li class="text-gray-500"><a>Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- secrah icon -->
+        <div class="navbar-end gap-4 hidden lg:flex">
+          <i class="fa fa-search bg-white border-2 border-gray-300 p-3 rounded-full cursor-pointer items-center" aria-hidden="true"></i>
+            <i class="fa fa-shopping-cart bg-white border-2 border-gray-300 p-3 rounded-full cursor-pointer items-center" aria-hidden="true"></i>
+            <h1 class="flex w-44 items-center gap-2 px-3 py-1 bg-[#abef5f] font-bold  rounded-full cursor-pointer">Book Consult <i class="fa fa-arrow-right bg-black text-white p-3 rounded-full -rotate-45" aria-hidden="true"></i></h1>
+        </div>
+        <!-- secrah icon -->
+
+        <!-- 3 -->
+          <div class="dropdown dropdown-end">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden"><i class="fa fa-bars " aria-hidden="true"></i></div>
+            <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-48 p-2 shadow">
+              <li class="text-gray-500"><a>Home</a></li>
+              <li class="text-gray-500"><a>Services</a></li>
+              <li class="text-gray-500"><a>Portfolio</a></li>
+              <li class="text-gray-500"><a>Blogs</a></li>
+              <li class="text-gray-500"><a>Contact Us</a></li>
+            </ul>
+        <!-- 3 -->
+      </div>
+    </nav>
+
+    
+  </header>
+
+  <!-- Main-Content -->
+  <main class="max-w-screen-xl mx-auto">
+
+    <!-- banner section -->
+    <section>
+      <img class="w-auto mx-auto" src="./assets/banner.png" alt="">
+      <div class="">
+        <h1 class="font-extrabold text-center text-xl lg:text-6xl mb-5 mt-5">A barn house of this design has a <br> striking appearance</h1>
+        <p class="font-normal lg:w-3/4 mx-auto text-center text-gray-500">
+          The barn house captivates with its blend of rustic 
+          charm and modern sophistication, featuring weathered
+          wood, sleek metal accents, and large windows that
+          flood the space with natural light.
+        </p>
+      </div>
+    </section>
+    <!-- banner section -->
+
   </main>
+  <!-- Main-Content -->
+
 </body>
 </html>
