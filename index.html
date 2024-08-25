@@ -54,7 +54,7 @@
         </div>
         
         <div class="navbar-center">
-          <ul class="menu menu-horizontal px-1 hidden md:hidden lg:flex mr-8">
+          <ul class="menu menu-horizontal px-1 hidden md:hidden lg:!flex mr-8">
             <li class="text-gray-500 font-bold"><a>Home</a></li>
             <li class="text-gray-500"><a>Services</a></li>
             <li class="text-gray-500"><a>Portfolio</a></li>
@@ -64,7 +64,7 @@
         </div>
 
         <!-- secrah icon -->
-        <div class="navbar-end gap-4 hidden md:flex lg:flex">
+        <div class="navbar-end gap-4 hidden md:!flex">
           <i class="fa fa-search bg-white border-2 border-gray-300 p-3 rounded-full cursor-pointer items-center" aria-hidden="true"></i>
             <i class="fa fa-shopping-cart bg-white border-2 border-gray-300 p-3 rounded-full cursor-pointer items-center" aria-hidden="true"></i>
             <h1 class="flex w-44 items-center justify-center gap-2 px-3 py-1 bg-[#abef5f] font-bold  rounded-full cursor-pointer">Book Consult <i class="fa fa-arrow-right bg-black text-white p-3 rounded-full -rotate-45" aria-hidden="true"></i></h1>
@@ -111,12 +111,12 @@
 
   <!-- Rectangle section -->
   <section class="mb-28 bg-[#f4f4f4] px-20 py-24 relative">
-    <img class="absolute top-9 left-10" src="./assets/Vector.png" alt="">
+    <img class="absolute top-9 left-10 hidden md:hidden lg:!flex" src="./assets/Vector.png" alt="">
     <div class="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2">
       <!-- Rectangle-Tittle -->
       <div class="">
-        <h1 class="flex w-36 justify-center
-         items-center text-center gap-2 md:mx-auto mx-auto lg:text-left
+        <h1 class="flex w-36 md:justify-center justify-normal items-center gap-1
+        text-center md:text-left
          px-1 py-1 bg-white font-bold
          rounded-full mb-4 cursor-pointer"><i class="fa fa-arrow-right rounded-full" aria-hidden="true"></i> About Us</h1>
         <h1 class="font-extrabold text-left text-xl md:text-4xl lg:text-5xl mb-4">We design thoughtful, liveable spaces</h1>
@@ -150,6 +150,5 @@
     </div>
   </section>
   <!-- Rectangle section -->
-
 </body>
 </html>
