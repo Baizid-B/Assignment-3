@@ -45,16 +45,16 @@
 
 </head>
 <body class="font-manrope">
-  <header class="container mx-auto px-12 pt-5 md:px-28">
+  <header class="container mx-auto px-4 pt-5 md:px-8">
     <nav class="container mx-auto">
       <div class="navbar bg-base-100 justify-between mx-auto">
 
         <div class="navbar-start w-full">
-          <h1 class=" font-bold text-xl lg:"><i class="fa fa-arrow-right bg-[#abef5f] p-3 rounded-full -rotate-45" aria-hidden="true"></i><a href=""> Rinterio</a></h1>
+          <h1 class=" font-bold text-xl cursor-pointer"><i class="fa fa-arrow-right bg-[#abef5f] p-3 rounded-full -rotate-45" aria-hidden="true"></i><a href=""> Rinterio</a></h1>
         </div>
         
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1 hidden max-md:flex  mr-8">
+        <div class="navbar-center">
+          <ul class="menu menu-horizontal px-1 hidden md:hidden lg:flex mr-8">
             <li class="text-gray-500 font-bold"><a>Home</a></li>
             <li class="text-gray-500"><a>Services</a></li>
             <li class="text-gray-500"><a>Portfolio</a></li>
@@ -64,16 +64,16 @@
         </div>
 
         <!-- secrah icon -->
-        <div class="navbar-end gap-4 hidden lg:flex">
+        <div class="navbar-end gap-4 hidden md:flex lg:flex">
           <i class="fa fa-search bg-white border-2 border-gray-300 p-3 rounded-full cursor-pointer items-center" aria-hidden="true"></i>
             <i class="fa fa-shopping-cart bg-white border-2 border-gray-300 p-3 rounded-full cursor-pointer items-center" aria-hidden="true"></i>
-            <h1 class="flex w-44 items-center gap-2 px-3 py-1 bg-[#abef5f] font-bold  rounded-full cursor-pointer">Book Consult <i class="fa fa-arrow-right bg-black text-white p-3 rounded-full -rotate-45" aria-hidden="true"></i></h1>
+            <h1 class="flex w-44 items-center justify-center gap-2 px-3 py-1 bg-[#abef5f] font-bold  rounded-full cursor-pointer">Book Consult <i class="fa fa-arrow-right bg-black text-white p-3 rounded-full -rotate-45" aria-hidden="true"></i></h1>
         </div>
         <!-- secrah icon -->
 
         <!-- 3 -->
           <div class="dropdown dropdown-end">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden"><i class="fa fa-bars " aria-hidden="true"></i></div>
+            <div tabindex="0" role="button" class="btn btn-ghost flex lg:hidden"><i class="fa fa-bars " aria-hidden="true"></i></div>
             <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-48 p-2 shadow">
               <li class="text-gray-500"><a>Home</a></li>
               <li class="text-gray-500"><a>Services</a></li>
@@ -89,25 +89,67 @@
   </header>
 
   <!-- Main-Content -->
-  <main class="max-w-screen-xl mx-auto">
+  <main class="max-w-screen-xl mx-auto px-6 md:px-8">
 
     <!-- banner section -->
-    <section>
-      <img class="w-auto mx-auto" src="./assets/banner.png" alt="">
+    <section class="mb-28">
+      <img class="mx-auto mb-4" src="./assets/banner.png" alt="">
       <div class="">
-        <h1 class="font-extrabold text-center text-xl lg:text-6xl mb-5 mt-5">A barn house of this design has a <br> striking appearance</h1>
-        <p class="font-normal lg:w-3/4 mx-auto text-center text-gray-500">
+        <h1 class="font-extrabold text-center text-xl md:text-4xl lg:text-6xl mb-4">A barn house of this design has a <br> striking appearance</h1>
+        <p class="font-normal  md:w-4/5 lg:w-3/4 mx-auto text-center text-gray-500 mb-8">
           The barn house captivates with its blend of rustic 
           charm and modern sophistication, featuring weathered
           wood, sleek metal accents, and large windows that
           flood the space with natural light.
         </p>
+        <h1 class="flex w-44 justify-center items-center mx-auto text-center gap-2 px-3 py-1 bg-[#d4f6ae] outline outline-[#abef5f] outline-1 font-bold  rounded-full cursor-pointer">View Details <i class="fa fa-arrow-right bg-[#abef5f] text-black p-2 rounded-full -rotate-45" aria-hidden="true"></i></h1>
       </div>
     </section>
     <!-- banner section -->
-
   </main>
   <!-- Main-Content -->
+
+  <!-- Rectangle section -->
+  <section class="mb-28 bg-[#f4f4f4] px-20 py-24 relative">
+    <img class="absolute top-9 left-10" src="./assets/Vector.png" alt="">
+    <div class="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2">
+      <!-- Rectangle-Tittle -->
+      <div class="">
+        <h1 class="flex w-36 justify-center
+         items-center text-center gap-2 md:mx-auto mx-auto lg:text-left
+         px-1 py-1 bg-white font-bold
+         rounded-full mb-4 cursor-pointer"><i class="fa fa-arrow-right rounded-full" aria-hidden="true"></i> About Us</h1>
+        <h1 class="font-extrabold text-left text-xl md:text-4xl lg:text-5xl mb-4">We design thoughtful, liveable spaces</h1>
+        <p class="md:w-4/5 lg:w-3/4 text-left text-black mb-8">
+          The barn house captivates with its blend of rustic charm and 
+          modern sophistication, featuring weathered wood, sleek metal accents.
+        </p>
+
+        <div class="flex flex-row md:flex-row lg:flex-col">
+          <div class="flex bg-white mb-6 p-6 rounded-xl">
+            <img src="./assets/commercial.png" alt="">
+            <div>
+              <h1>Commercial</h1>
+              <p>The barn house captivates with its blend of rustic charm and modern.</p>
+            </div>
+          </div>
+          <div class="flex bg-white mb-6 p-6 rounded-xl">
+            <img src="./assets/residential.png" alt="">
+            <div>
+              <h1>Residential</h1>
+              <p>The barn house captivates with its blend of rustic charm and modern.</p>
+          </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- Rectangle-Tittle -->
+      <div>
+        <img class="mx-auto md:bg-cover w-fit" src="./assets/Rectangle.png" alt="">
+      </div>
+    </div>
+  </section>
+  <!-- Rectangle section -->
 
 </body>
 </html>
