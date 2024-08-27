@@ -26,6 +26,10 @@
       tailwind.config = {
         theme: {
           extend: {
+            // xm:{
+            //   max-width:
+            // }
+            ,
             colors: {
               clifford: '#da373d',
             }
@@ -110,9 +114,12 @@
   <!-- Main-Content -->
 
   <!-- Rectangle section -->
-  <section class="mb-28 bg-[#f4f4f4] px-20 py-24 relative">
+  <section class="mb-28 bg-[#f4f4f4] px-10 md:px-20 py-24 relative">
     <img class="absolute top-9 left-10 hidden md:hidden lg:!flex" src="./assets/Vector.png" alt="">
-    <div class="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2">
+
+    <!-- About Us part -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 mb-24">
+
       <!-- Rectangle-Tittle -->
       <div class="">
         <h1 class="flex w-36 md:justify-center justify-normal items-center gap-1
@@ -125,30 +132,213 @@
           modern sophistication, featuring weathered wood, sleek metal accents.
         </p>
 
-        <div class="flex flex-row md:flex-row lg:flex-col">
-          <div class="flex bg-white mb-6 p-6 rounded-xl">
-            <img src="./assets/commercial.png" alt="">
+        <div class="flex gap-6 mb-4 flex-col md:flex-row lg:flex-col">
+          <div class="flex md:w-[90%] bg-white mb-7 p-6 rounded-xl gap-6">
+            <img  src="./assets/commercial.png" alt="">
             <div>
-              <h1>Commercial</h1>
-              <p>The barn house captivates with its blend of rustic charm and modern.</p>
+              <h1 class="font-bold mb-3">Commercial</h1>
+              <p class="text-xs lg:text-base">The barn house captivates with its blend <br> of rustic charm and modern.</p>
             </div>
           </div>
-          <div class="flex bg-white mb-6 p-6 rounded-xl">
-            <img src="./assets/residential.png" alt="">
+          <div class="flex md:w-[90%] bg-white mb-7 p-6 rounded-xl gap-6">
+            <img  src="./assets/residential.png" alt="">
             <div>
-              <h1>Residential</h1>
-              <p>The barn house captivates with its blend of rustic charm and modern.</p>
+              <h1 class="font-bold mb-3">Residential</h1>
+              <p class="text-xs lg:text-base">The barn house captivates with its blend <br> of rustic charm and modern.</p>
           </div>
             </div>
         </div>
       </div>
-
       <!-- Rectangle-Tittle -->
+
+      <!-- Rectangle-photo part -->
       <div>
-        <img class="mx-auto md:bg-cover w-fit" src="./assets/Rectangle.png" alt="">
+        <img class="md:bg-cover w-screen" src="./assets/Rectangle.png" alt="">
+      </div>
+      <!-- Rectangle-photo part -->
+    </div>
+    <!-- About Us part -->
+
+    <!-- Happy Client Review Part -->
+    <div class="bg-white p-8 rounded-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mb-24">
+      <div class="text-center p-6">
+        <i class="fa fa-comments text-4xl mb-4" aria-hidden="true"></i>
+        <h1 class="text-2xl font-extrabold text-black">235+</h1>
+        <p class="font-semibold text-gray-600">Happy Client Review</p>
+      </div>
+      <div class="text-center p-6">
+        <i class="fa fa-briefcase text-4xl mb-4" aria-hidden="true"></i>
+        <h1 class="text-2xl font-extrabold text-black">50+</h1>
+        <p class="font-semibold text-gray-600">Work Departments</p>
+      </div>
+      <div class="text-center p-6">
+        <i class="fa fa-users text-4xl mb-4" aria-hidden="true"></i> 
+        <h1 class="text-2xl font-extrabold text-black">30k+</h1>
+        <p class="font-semibold text-gray-600">Our Happy Client</p>
+      </div>
+      <div class="text-center p-6">
+        <i class="fa fa-users text-4xl mb-4" aria-hidden="true"></i>
+        <h1 class="text-2xl font-extrabold text-black">235+</h1>
+        <p class="font-semibold text-gray-600">Staff Members</p>
       </div>
     </div>
+    <!-- Happy Client Review Part -->
+    <!-- Our Works Process Part -->
+    <div>
+
+      <!-- Our Works Process Tittle -->
+      <div class="mb-6">
+        <h1 class="flex w-44 justify-center items-center mx-auto text-center gap-2 px-3 py-1 bg-white  font-bold  rounded-full cursor-pointer"><i class="fa fa-arrow-right text-black" aria-hidden="true"></i> How we works</h1>
+        <h1 class="font-extrabold text-5xl text-center mt-4">Our Works Process</h1>
+        <p class="font-light w-2/3 text-xs md:text-sm lg:text-xl text-center mx-auto mt-4">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+      </div>
+      <!-- Our Works Process Tittle -->
+
+      <!-- Our Works Process Card -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="p-4 bg-[#e7c1d3] rounded-xl">
+          <img src="./assets/concept.png" alt="">
+          <h1 class="mt-4 font-extrabold">Concept</h1>
+          <p class="mt-3 text-gray-800 font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+        </div>
+        <div class="p-4 bg-[#efda6e] rounded-xl">
+          <img src="./assets/flow-chart.png" alt="">
+          <h1 class="mt-4 font-extrabold">Design Process</h1>
+          <p class="mt-3 text-gray-800 font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+        </div>
+        <div class="p-4 bg-[#a4dac3] rounded-xl">
+          <img src="./assets/vision.png" alt="">
+          <h1 class="mt-4 font-extrabold">Supervision</h1>
+          <p class="mt-3 text-gray-800 font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+        </div>
+        <div class="p-4 bg-[#77aaea] rounded-xl">
+          <img src="./assets/budget-planning.png" alt="">
+          <h1 class="mt-4 font-extrabold">Budget Planning</h1>
+          <p class="mt-3 text-gray-800 font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+        </div>
+      </div>
+      <!-- Our Works Process Card -->
+    
+    </div>
+     <!-- Our Works Process Part -->
+
   </section>
   <!-- Rectangle section -->
+
+  <!-- Our Latest Portfolio section -->
+    <section class="mb-24 px-10 md:px-20 py-24 bg-[#f4f4f4] md:bg-[#f4f4f4] lg:bg-white">
+
+      <!-- Our Latest Portfolio Tittle -->
+        <div class="mb-8">
+          <h1 class="flex w-64 justify-center items-center mx-auto text-center gap-2 px-3 py-1 !bg-[#eefcdf]  font-bold  rounded-full cursor-pointer"><i class="fa fa-arrow-right text-black" aria-hidden="true"></i> Explore our Latest works</h1>
+          <h1 class="font-extrabold text-5xl text-center mt-4">Our Latest Portfolio</h1>
+          <p class="font-light w-2/3 text-xs md:text-sm lg:text-xl text-center mx-auto mt-4">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+        </div>
+        <!-- Our Latest Portfolio Tittle -->
+
+        <!-- Our Latest Portfolio Card -->
+        <div class="mb-6">
+
+          <!-- card-1 -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+              <div class="col-span-1 md:col-span-2 lg:col-span-2 md:flex lg:flex border-2 border-gray-100 rounded-xl p-6 bg-white gap-4">
+                <img class="border-2 border-dashed border-gray-300 rounded-xl w-full" src="./assets/img1.png" alt="">
+                <div>
+                  <h1 class="font-extrabold text-2xl mb-4 text-[#494949]">Commercial</h1>
+                  <p class="mb-5 text-[#494949]">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
+                  <h1 class="font-bold cursor-pointer text-[#494949]">View Details <i class="fa fa-arrow-right bg-[#abef5f] rounded-full -rotate-45 p-2 text-black" aria-hidden="true"></i></h1>
+                </div>
+              </div>
+                <div class="border-2 border-gray-100 rounded-xl p-4 bg-white ">
+                  <img class="border-2 border-dashed border-gray-300 rounded-xl !h-[217.69px]" src="./assets/img2.png" alt="">
+                </div>
+  
+                <div class="border-2 border-gray-100 rounded-xl p-4 bg-white lg:hidden">
+                  <img class="border-2 border-dashed border-gray-300 rounded-xl w-full" src="./assets/img3.png" alt="">
+                </div>
+          </div>
+
+              <!-- card-2 -->
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+                <div class="border-2 col-span-1 border-gray-100 rounded-xl p-4 bg-white xm:hidden sm:hidden md:hidden lg:block">
+                  <img class="border-2 border-dashed border-gray-300 rounded-xl w-full" src="./assets/img3.png" alt="">
+                </div>
+                <div class="col-span-1 md:col-span-2 lg:col-span-2 md:flex lg:flex border-2 border-gray-100 rounded-xl p-6 bg-white !gap-4">
+                  <img class="border-2 border-dashed border-gray-300 rounded-xl w-full" src="./assets/img4.png" alt="">
+                  <div>
+                    <h1 class="font-extrabold text-2xl mb-4 text-[#494949]">Commercial</h1>
+                    <p class="mb-5 text-gray-700">The barn house captivates with its blend of rustic charm and modern.</p>
+                    <h1 class="font-bold cursor-pointer">View Details <i class="fa fa-arrow-right bg-[#abef5f] rounded-full -rotate-45 p-2 text-black" aria-hidden="true"></i></h1>
+                  </div>
+                </div>
+                <div class="border-2 border-gray-100 rounded-xl p-6 bg-white text-[#494949]">
+                  <img class="border-2 border-dashed border-gray-300 rounded-xl w-full" src="./assets/img5.png" alt="">
+                </div>
+                <div class="border-2 border-gray-100 rounded-xl p-6 bg-white text-[#494949] lg:!hidden">
+                  <img class="border-2 border-dashed border-gray-300 rounded-xl w-full" src="./assets/img3.png" alt="">
+              </div>
+              <!-- card-2 -->
+        </div>
+        <!-- Our Latest Portfolio Card -->
+
+    </section>
+  <!-- Our Latest Portfolio section -->
+
+  <!-- Our Articles and News section -->
+  <section class="mb-28 px-10 md:px-20 py-24 bg-[#f4f4f4]">
+
+    <!-- Our Articles and News Tittle -->
+      <div class="mb-8">
+        <h1 class="flex w-64 justify-center items-center mx-auto text-center gap-2 px-3 py-1 !bg-[#eefcdf]  font-bold  rounded-full cursor-pointer"><i class="fa fa-arrow-right text-black" aria-hidden="true"></i> Rinterio News</h1>
+        <h1 class="font-extrabold text-5xl text-center mt-4">Read Our Articles and News</h1>
+        <p class="font-light w-2/3 text-xs md:text-sm lg:text-xl text-center mx-auto mt-4">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+      </div>
+      <!-- Our Articles and News Tittle -->
+
+      <!-- Our Articles and News Card -->
+       <div class="flex justify-between gap-6 items-center">
+        <div class="bg-white rounded-xl p-4">
+          <img class="mb-4 border-2 border-dashed border-gray-300 rounded-xl" src="./assets/article1.png" alt="">
+          <div>
+            <div class="flex  gap-4 text-[#737373] items-center mb-4">
+              <div><p><i class="fa fa-calendar" aria-hidden="true"></i> July14, 2024</p></div>
+              <div><p><i class="fa fa-user" aria-hidden="true"></i> By Admin</p></div>
+            </div>
+            <h1 class="font-extrabold text-[#494949] mb-2">How to choose the furniture right  of your home.</h1>
+            <p class="text-[#737373] mb-3">The barn house captivates with its blend of rustic charm and modern. </p>
+            <h1 class="font-bold">Read More <i class="fa fa-arrow-right bg-[#abef5f] p-2 rounded-full -rotate-45" aria-hidden="true"></i></h1>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl p-4">
+          <img class="mb-4 border-2 border-dashed border-gray-300 rounded-xl" src="./assets/article2.png" alt="">
+          <div>
+            <div class="flex  gap-4 text-[#737373] items-center mb-4">
+              <div><p><i class="fa fa-calendar" aria-hidden="true"></i> July14, 2024</p></div>
+              <div><p><i class="fa fa-user" aria-hidden="true"></i> By Admin</p></div>
+            </div>
+            <h1 class="font-extrabold text-[#494949] mb-2">How to choose the furniture right  of your home.</h1>
+            <p class="text-[#737373] mb-3">The barn house captivates with its blend of rustic charm and modern. </p>
+            <h1 class="font-bold">Read More <i class="fa fa-arrow-right bg-[#abef5f] p-2 rounded-full -rotate-45" aria-hidden="true"></i></h1>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl p-4">
+          <img class="mb-4 border-2 border-dashed border-gray-300 rounded-xl" src="./assets/article3.png" alt="">
+          <div>
+            <div class="flex  gap-4 text-[#737373] items-center mb-4">
+              <div><p><i class="fa fa-calendar" aria-hidden="true"></i> July14, 2024</p></div>
+              <div><p><i class="fa fa-user" aria-hidden="true"></i> By Admin</p></div>
+            </div>
+            <h1 class="font-extrabold text-[#494949] mb-2">How to choose the furniture right  of your home.</h1>
+            <p class="text-[#737373] mb-3">The barn house captivates with its blend of rustic charm and modern. </p>
+            <h1 class="font-bold">Read More <i class="fa fa-arrow-right bg-[#abef5f] p-2 rounded-full -rotate-45" aria-hidden="true"></i></h1>
+          </div>
+        </div>
+       </div>
+      <!-- Our Articles and News Card -->
+
+  </section>
+<!-- Our Articles and News -->
+
 </body>
 </html>
